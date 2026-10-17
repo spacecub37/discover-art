@@ -2,29 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>gAIlery — Local Prototype</title>
+    <title>gAIlery — Global Art Directory</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="container">
+<div id="portal-container">
+    <header id="portal-header">
+        <h1>gAIlery</h1>
+        <p>Select a cultural institution to begin your interactive art dialogue.</p>
+    </header>
 
-    <div id="art-panel">
-        <img id="art-image" src="" alt="Artwork">
-        <button id="next-btn">Next Artwork</button>
-    </div>
+   <div id="wing-grid">
+    <a href="chicago/" class="wing-card">
+        <h2>Art Institute of Chicago</h2>
+        <p>Explore public domain masterpieces from the heart of the Midwest.</p>
+        <span class="enter-btn">Enter Gallery Wing &rarr;</span>
+    </a>
 
-    <div id="chat-panel">
-        <div id="chat-window"></div>
-
-        <div id="input-area">
-            <input type="text" id="user-input" placeholder="Type your thoughts…">
-            <button id="send-btn">Send</button>
-        </div>
-    </div>
-
+    <a href="va/" class="wing-card">
+        <h2>Victoria and Albert Museum</h2>
+        <p>Discover design, fashion, and art collections from London's premier institution.</p>
+        <span class="enter-btn">Enter Gallery Wing &rarr;</span>
+    </a>
+</div>
 </div>
 
-<script src="app.js"></script>
 </body>
 </html>
