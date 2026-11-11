@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #eee;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#art-panel {
+    flex: 2;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#art-image {
+    max-width: 90%;
+    max-height: 75vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #444;
+    background: #000; /* Gives a nice dark placeholder box while loading */
+}
+
+#next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #444;
+    color: #eee;
+    border: none;
+    cursor: pointer;
+}
+
+#chat-panel {
+    flex: 1;
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-window {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#input-area {
+    display: flex;
+    padding: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    background: #333;
+    color: #eee;
+    border: none;
+}
+
+#send-btn {
+    padding: 10px 20px;
+    background: #555;
+    color: #eee;
+    border: none;
+    cursor: pointer;
+}
+
+/* Discover Art v2 gallery additions */
+
+* { box-sizing: border-box; }
+
+.gallery-nav {
+    min-height: 54px;
+    background: #151515;
+    border-bottom: 1px solid #6b5739;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 20px;
+    color: #edc58d;
+}
+
+.gallery-nav a {
+    color: #edc58d;
+    text-decoration: underline;
+}
+
+#container {
+    height: calc(100vh - 54px);
+}
+
+#art-panel, #chat-panel {
+    min-width: 0;
+}
+
+#art-image {
+    max-height: 68vh;
+}
+
+#art-status {
+    color: #edc58d;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.guide-heading {
+    padding: 15px 20px;
+    border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: #edc58d;
+}
+
+.guide-heading span {
+    color: #bbb;
+    font-size: 13px;
+}
+
+#chat-window {
+    min-height: 0;
+}
+
+#user-input {
+    min-width: 0;
+}
+
+#next-btn, #send-btn {
+    border-radius: 4px;
+}
+
+#next-btn:hover, #send-btn:hover {
+    background: #766044;
+}
+
+@media (max-width: 750px) {
+    #container {
+        flex-direction: column;
+        height: auto;
+        min-height: calc(100vh - 54px);
+    }
+
+    #art-panel {
+        flex: none;
+        min-height: 45vh;
+        padding: 20px 0;
+    }
+
+    #art-image {
+        max-height: 35vh;
+    }
+
+    #chat-panel {
+        flex: none;
+        min-height: 45vh;
+    }
+
+    #chat-window {
+        min-height: 230px;
+        max-height: 45vh;
+    }
+
+    .gallery-nav {
+        flex-wrap: wrap;
+    }
+}

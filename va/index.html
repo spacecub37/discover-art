@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width,initial-scale=1">
+<title>Victoria and Albert Museum | Discover Art</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="gallery-nav">
+  <a href="../index.html">← Back to Galleries</a>
+  <span>Victoria and Albert Museum · Your guide: Percy</span>
+</nav>
+
+<div id="container">
+  <div id="art-panel">
+    <img id="art-image" alt="Museum artwork">
+    <p id="art-status" role="status"></p>
+    <button id="next-btn">Next Artwork</button>
+  </div>
+
+  <div id="chat-panel">
+    <div class="guide-heading">
+      <strong>Percy</strong>
+      <span>Your art companion</span>
+    </div>
+    <div id="chat-window" aria-live="polite"></div>
+    <div id="input-area">
+      <input id="user-input" type="text"
+             placeholder="What do you see?">
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+</div>
+
+<script>
+window.galleryGuide = "Percy";
+</script>
+<script src="../js/core.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
