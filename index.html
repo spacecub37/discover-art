@@ -1,42 +1,46 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Discover Art | Welcome</title>
-  <link rel="stylesheet" href="welcome.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#17191d">
+<meta name="description" content="Earthcity Communications">
+<title>Earthcity Communications</title>
+<meta http-equiv="refresh" content="6;url=https://www.discoart.co.uk/">
+<style>
+:root{color-scheme:dark;--silver:#c4c0b7;--gold:#c7ad80;--bg:#17191d}
+*{box-sizing:border-box}html,body{height:100%;margin:0}body{background:var(--bg);color:var(--silver);font-family:Arial,Helvetica,sans-serif;display:grid;place-items:center;overflow:hidden}
+main{width:min(84vw,520px);text-align:center}a{color:inherit;text-decoration:none;display:block;outline-offset:12px}a:focus-visible{outline:2px solid var(--gold);border-radius:12px}
+svg{display:block;width:100%;height:auto;overflow:visible}.planet{transform-box:fill-box;transform-origin:center;animation:resolve 1.8s cubic-bezier(.42,0,.58,1) both}.orbital{transform-box:view-box;transform-origin:160px 106px;animation:orbit 1.8s cubic-bezier(.42,0,.58,1) both}.wordmark{opacity:0;animation:reveal .6s ease 2.55s forwards}.hint{font-size:12px;letter-spacing:.14em;opacity:0;animation:reveal .5s ease 3.8s forwards;margin-top:12px;color:#b7b1a5}
+@keyframes resolve{from{transform:scaleX(1.8)}to{transform:scaleX(1)}}
+@keyframes orbit{from{transform:rotate(-32deg)}to{transform:rotate(-23deg)}}
+@keyframes reveal{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.planet,.orbital,.wordmark,.hint{animation:none;opacity:1}}
+</style>
 </head>
 <body>
-  <main>
-    <header>
-      <p class="eyebrow">A WORLD OF ART · A CONVERSATION AWAY</p>
-      <h1>Welcome to <em>Discover Art</em></h1>
-      <p class="intro">
-        Wander through extraordinary collections.
-        Discover something unexpected.
-        And explore what art brings out in you.
-      </p>
-    </header>
-
-    <section class="galleries">
-      <a class="gallery" href="chicago/">
-        <span>UNITED STATES · CHICAGO</span>
-        <h2>Art Institute of Chicago</h2>
-        <p>Explore art with Lauren, your friendly AI companion.</p>
-        <strong>Enter with Lauren →</strong>
-      </a>
-
-      <a class="gallery" href="va/">
-        <span>UNITED KINGDOM · LONDON</span>
-        <h2>Victoria and Albert Museum</h2>
-        <p>Discover art and design with Percy as your guide.</p>
-        <strong>Enter with Percy →</strong>
-      </a>
-    </section>
-
-    <footer>
-      Discover art. Discover a little about yourself.
-    </footer>
-  </main>
+<main>
+<a href="https://www.discoart.co.uk/" aria-label="Continue to DiscoArt">
+<svg viewBox="0 0 320 275" role="img" aria-labelledby="logo-title">
+<title id="logo-title">Earthcity Communications</title>
+<g class="planet" fill="none" stroke="var(--silver)" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="160" cy="106" r="59" stroke-width="3.3"/>
+<ellipse cx="160" cy="106" rx="24" ry="59" stroke-width="1.7"/>
+<path d="M101 106H219 M111 77H209 M111 135H209" stroke-width="1.7"/>
+<path d="M101 93H123V72H142V58H162V75H183V56H200V73H219" stroke-width="3.3"/>
+</g>
+<g class="orbital" fill="none" stroke="var(--silver)" stroke-width="1.8"><ellipse cx="160" cy="106" rx="72" ry="33" stroke-dasharray="215 500"/></g>
+<g class="wordmark" fill="var(--gold)" text-anchor="middle" font-family="Arial,Helvetica,sans-serif">
+<text x="160" y="214" font-size="23" font-weight="700" letter-spacing="3">EARTHCITY</text>
+<text x="160" y="238" font-size="11" letter-spacing="3.2">COMMUNICATIONS</text>
+</g>
+</svg>
+</a>
+<div class="hint">CONTINUING TO DISCOART…</div>
+</main>
+<script>
+// Meta refresh provides a fallback when JavaScript is disabled.
+window.setTimeout(()=>window.location.replace('https://www.discoart.co.uk/'),6000);
+</script>
 </body>
 </html>
